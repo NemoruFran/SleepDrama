@@ -1,22 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import Button from './Button.js';
+import TextMessage from './TextMessage.js'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <div>
+            <h3>LOGO</h3>
+        </div>
+        <div className="menu_container">
+          <TextMessage />
+          <Button text="Login" className= "button_primary"/>
+          <Button text="SignUp" className = "button_secondary"/>
+        </div>
       </header>
     </div>
   );

@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+* {
+  font-family: Manrope;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  display:flex;
+  justify-content: space-between;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.menu_container {
+  display:flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.logo{
+  margin-left: 20px;
+}
+
+
+
+/* div,button{
+  margin-left: 10px;
+}  Es lo mismo que .menu_container > * */
+
+.menu_container > *{
+  margin-left: 10px;
+}
+
+.button_primary {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 700;
+  background: #F1E4FF;
+  border-radius: 8px;
+  border: 0px;
+  padding: 10px 31px;
+  color: #8C30F5;
+}
+
+/* Estilo alternativo para un evento con un elemento de una clase -> nombredeclase::*/
+.button_primary:hover {
+  background: #8C30F5;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.button_secondary {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 700;
+  background: #8C30F5;
+  border-radius: 8px;
+  border: 0px;
+  padding: 10px 31px;
+  color: #F1E4FF;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button_secondary:hover {
+  background: #F1E4FF;
+  color: #8C30F5
 }
