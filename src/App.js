@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <header>
         <div>
-            <h3>LOGO</h3>
+            <h3>LOGOA</h3>
         </div>
         <div className="menu_container">
           <TextMessage />
